@@ -4,7 +4,7 @@ export function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <img src="" alt="" />
+        <img src="/images/react.png" alt="" />
         <nav>
           <ul>
             <li>
