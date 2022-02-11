@@ -1,5 +1,6 @@
 import "../src/styles/global.scss";
 import { Footer } from "./components/Footer";
+import { Card } from "./components/Card";
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
@@ -22,6 +23,7 @@ export function App() {
       <Routes>
         <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
+      <Card />
       <Footer />
     </>
   );
