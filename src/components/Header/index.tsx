@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import styles from './styles.module.scss';
 
 export function Header() {
@@ -8,12 +10,23 @@ export function Header() {
         <nav>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <NavLink
+                to="/"
+                style={({ isActive }) => ({
+                  color: isActive ? '#167ABC' : '#555555',
+                })}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
               <a href="#">Produtos</a>
             </li>
-            <a href="">Login</a>
+            <NavLink
+              to="/login"
+            >
+              Login
+            </NavLink>
           </ul>
         </nav>
       </div>
