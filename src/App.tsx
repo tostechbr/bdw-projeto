@@ -1,4 +1,5 @@
 import "../src/styles/global.scss";
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 
@@ -7,6 +8,7 @@ export function App() {
     <>
       <Header />
       <Hero />
+      <Footer />
     </>
   );
 }
