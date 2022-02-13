@@ -23,7 +23,7 @@ export function App() {
       <Routes>
         <Route path="/cadastrar" element={<Cadastrar />} />
       </Routes>
-      <Card />
+
       <Footer />
     </>
   );
