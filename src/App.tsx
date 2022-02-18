@@ -1,20 +1,17 @@
 import "../src/styles/global.scss";
 import { Footer } from "./components/Footer";
-import { Card } from "./components/Card";
+
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { Cadastrar } from "./pages/Cadastrar";
+import { Produto1 } from "./pages/Produto1";
 
 import { Routes, Route } from "react-router-dom";
 
 import "../src/styles/global.scss";
-// import { useEffect } from "react";
 
 export function App() {
-  // useEffect(() => {
-  //   fetch("http://localhost:4000/user/purchase").then((res) => console.log(res));
-  // }, []);
   return (
     <>
       <Header />
@@ -26,6 +23,9 @@ export function App() {
       </Routes>
       <Routes>
         <Route path="/cadastrar" element={<Cadastrar />} />
+      </Routes>
+      <Routes>
+        <Route path="/produto1" element={<Produto1 />} />
       </Routes>
 
       <Footer />

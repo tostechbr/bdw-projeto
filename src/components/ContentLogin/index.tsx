@@ -13,8 +13,8 @@ export function ContentLogin() {
 
   console.log(resultEmail, resultSenha)
 
-  function handleSubmit(){
-    if(senha === resultSenha && email === resultEmail) {
+  function handleSubmit() {
+    if (senha === resultSenha && email === resultEmail) {
       localStorage.setItem('User', 'Logado')
       return true
     } else {
@@ -29,16 +29,17 @@ export function ContentLogin() {
         <form >
           <label >
             Email
-            <input type="email" name="email" onChange={(e)=>setEmail(e.target.value)}/>
+            <input type="email" name="email" onChange={(e) => setEmail(e.target.value)} />
           </label>
           <label >
             Senha
-            <input type="password" name="password" onChange={(e)=>setSenha(e.target.value)} />
+            <input type="password" name="password" onChange={(e) => setSenha(e.target.value)} />
           </label>
+
           <NavLink to="/" >
-          <button className={styles.submit} onClick={handleSubmit}>
-            Enviar
-          </button>
+            <button className={styles.submit} onClick={handleSubmit}>
+              Logar
+            </button>
           </NavLink>
           <p>
             Não é cadastrado?
