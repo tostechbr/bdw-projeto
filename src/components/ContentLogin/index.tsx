@@ -14,11 +14,11 @@ export function ContentLogin() {
             <input type="text" name="name" />
           </label>
           <label >
-            Email
-            <input type="email" name="email" />
+            Senha
+            <input type="password" name="password" />
           </label>
           <button className={styles.submit} type="submit">
-            Enviar
+            Logar
           </button>
           <p>
             Não é cadastrado?
