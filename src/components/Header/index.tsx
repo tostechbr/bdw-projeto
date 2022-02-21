@@ -23,9 +23,6 @@ export function Header() {
                   Home
                 </NavLink>
               </li>
-              <li>
-                <a href="#">Produtos</a>
-              </li>
                <NavLink
                 to="/login"
               >
